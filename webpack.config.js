@@ -5,5 +5,10 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
-  }
+  },
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/
+  },
+  devtool: 'inline-source-map'
 };
